@@ -1,0 +1,39 @@
+<nav class="navbar">
+  <button class="navbar-toggler" (click)="isCollapsed = !isCollapsed">
+    COLLAPSER
+  </button>
+  <div [@flip]="isCollapsed" class="collapse navbar-collapse bottom-nav-container justify-content-around">
+    <a
+      class="bottom-nav-item align-items-center justify-content-center"
+      [routerLink]="['/about']"
+      routerLinkActive="active-item">
+      <h3>
+        ABOUT
+      </h3>
+    </a>
+    <a
+      class="bottom-nav-item align-items-center justify-content-center"
+      [routerLink]="['/skills']"
+      routerLinkActive="active-item">
+      <h3>
+        SKILLS
+      </h3>
+    </a>
+    <a
+      class="bottom-nav-item align-items-center justify-content-center"
+      [routerLink]="['/resume']"
+      routerLinkActive="active-item">
+      <h3>
+        RESUME
+      </h3>
+    </a>
+    <a
+      class="bottom-nav-item align-items-center justify-content-center"
+      [routerLink]="['/github']"
+      routerLinkActive="active-item">
+      <h3>
+        GITHUB
+      </h3>
+    </a>
+  </div>
+</nav>

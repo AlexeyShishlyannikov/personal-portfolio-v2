@@ -1,0 +1,9 @@
+<div class="name">
+  <div
+    style="display: inline-block;"
+    *ngFor="let char of letters; let i = index"
+    [@pulse]="letterStates[i]"
+    (mouseover)="letterStates[i] = !letterStates[i]">
+    {{ char !== ' ' ? char : '&nbsp;' }}
+  </div>
+</div>

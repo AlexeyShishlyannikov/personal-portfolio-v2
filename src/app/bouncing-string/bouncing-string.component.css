@@ -1,0 +1,7 @@
+.name {
+  font-size: 30px;
+  font-weight: 300;
+}
+.name span {
+  margin: 0 -4px;
+}
